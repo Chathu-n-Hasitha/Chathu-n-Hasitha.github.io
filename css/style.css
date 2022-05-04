@@ -10,6 +10,12 @@
 * 	Template Style 
 *
 * ======================================================= */
+
+/*Auther@ Hasitha Subhashana*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
