@@ -57,7 +57,7 @@
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#fh5co-started">RVSP</a></li>
+							<li><a href="#fh5co-started" onclick="return scrollSmooth('#fh5co-started');">RVSP</a></li>
 							<li><a href="#fh5co-couple-story">Story</a></li>
 							<li><a href="#fh5co-gallery">Gallery</a></li>
 							<li><a href="#fh5co-testimonial">Wishes</a></li>
@@ -456,11 +456,11 @@
 			});
 		});
 
-		$(".col-xs-10 text-right menu-1 ul a").on("click", function (e) {
-			e.preventDefault();
-			const href = $(this).attr("href");
-			$("html, body").animate({ scrollTop: $(href).offset().top }, 800);
-		});
+		function scrollSmooth(location) {
+			$('html, body').animate({
+				scrollTop: $(location).offset().top
+			}, 2000);
+		}
 
 	</script>
 
