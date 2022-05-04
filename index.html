@@ -149,8 +149,10 @@
 											<span>Thursday 12</span>
 											<span>May, 2022</span>
 										</div>
-										<p>Our marriage marks the beginning of a new chapter in our lives. Only with the participation of our beloved ones would this event become complete.
-										Together with our families we invite you to share in the joy and celebration of our marriage.</p>
+										<p>Our marriage marks the beginning of a new chapter in our lives. Only with the
+											participation of our beloved ones would this event become complete.
+											Together with our families we invite you to share in the joy and celebration
+											of our marriage.</p>
 									</div>
 								</div>
 							</div>
@@ -316,14 +318,15 @@
 									<div class="item">
 										<div class="testimony-slide active text-center">
 											<figure>
-												<img src="images/a6bf25f1-4422-454c-ba3d-8faf40211fce.jpg" alt="Anji">
+												<img src="images/964e3f1a-934d-4595-ba50-4ce6300102da.jpg" alt="Anji">
 											</figure>
 											<span>Anji</span>
 											<blockquote>
-												<p>"Dr. Seuss once wrote: “We are all a little weird and life's a little weird, 
-													and when we find someone whose weirdness is compatible with ours, 
+												<p>"Dr. Seuss once wrote: “We are all a little weird and life's a little
+													weird,
+													and when we find someone whose weirdness is compatible with ours,
 													we join up with them and fall in mutual weirdness and call it love.”
-													
+
 													Wishing you a lifetime full of love and happiness !!."</p>
 											</blockquote>
 										</div>
@@ -451,6 +454,12 @@
 						document.getElementById('lname').value = '';
 					})
 			});
+		});
+
+		$(".col-xs-10 text-right menu-1 ul a").on("click", function (e) {
+			e.preventDefault();
+			const href = $(this).attr("href");
+			$("html, body").animate({ scrollTop: $(href).offset().top }, 800);
 		});
 
 	</script>
