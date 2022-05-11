@@ -7,8 +7,8 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
-  opacity: 0.8;
+  background: #000;
+  opacity: 0.80;
   filter: alpha(opacity=80); }
 
 .mfp-wrap {
@@ -83,7 +83,7 @@
   display: none !important; }
 
 .mfp-preloader {
-  color: #cccccc;
+  color: #fff;
   position: absolute;
   top: 50%;
   width: auto;
@@ -93,9 +93,9 @@
   right: 8px;
   z-index: 1044; }
   .mfp-preloader a {
-    color: #cccccc; }
+    color: #fff; }
     .mfp-preloader a:hover {
-      color: white; }
+      color: #fff; }
 
 .mfp-s-ready .mfp-preloader {
   display: none; }
@@ -103,7 +103,8 @@
 .mfp-s-error .mfp-content {
   display: none; }
 
-button.mfp-close, button.mfp-arrow {
+button.mfp-close, 
+button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
   background: transparent;
@@ -114,7 +115,9 @@ button.mfp-close, button.mfp-arrow {
   padding: 0;
   z-index: 1046;
   -webkit-box-shadow: none;
-  box-shadow: none; }
+  box-shadow: none; 
+
+}
 button::-moz-focus-inner {
   padding: 0;
   border: 0; }
@@ -128,7 +131,7 @@ button::-moz-focus-inner {
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: 0.65;
+  opacity: 0.99;
   filter: alpha(opacity=65);
   padding: 0 0 18px 10px;
   color: white;
@@ -142,21 +145,23 @@ button::-moz-focus-inner {
     top: 1px; }
 
 .mfp-close-btn-in .mfp-close {
-  color: #333333; }
+  color: #fff; }
 
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
-  color: white;
+  color: #fff;
   right: -6px;
   text-align: right;
   padding-right: 6px;
-  width: 100%; }
+  width: 100%; 
+  top: -10px;
+}
 
 .mfp-counter {
   position: absolute;
   top: 0;
   right: 0;
-  color: #cccccc;
-  font-size: 12px;
+  color: #fff;
+  font-size: 14px;
   line-height: 18px; }
 
 .mfp-arrow {
@@ -235,7 +240,8 @@ button::-moz-focus-inner {
     width: 100%;
     height: 100%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: black; }
+    background: black; 
+}
 
 /* Main image in popup */
 img.mfp-img {
@@ -264,8 +270,10 @@ img.mfp-img {
     width: auto;
     height: auto;
     z-index: -1;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: #444444; }
+
+    background: #444444; 
+
+}
   .mfp-figure small {
     color: #bdbdbd;
     display: block;
@@ -285,7 +293,7 @@ img.mfp-img {
 .mfp-title {
   text-align: left;
   line-height: 18px;
-  color: #f3f3f3;
+  color: #fff;
   word-wrap: break-word;
   padding-right: 36px; }
 
@@ -366,3 +374,6 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+
+
